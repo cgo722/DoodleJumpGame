@@ -1,3 +1,12 @@
-[gd_scene format=3 uid="uid://bqop38xfpelk1"]
+[gd_scene load_steps=3 format=3 uid="uid://bqop38xfpelk1"]
+
+[ext_resource type="PackedScene" uid="uid://b1hk7knkfmgn1" path="res://Scenes/Platforms/Basic Floor/Basic Floor.tscn" id="1_ydtka"]
+[ext_resource type="PackedScene" uid="uid://b7q415q1n2y7c" path="res://Scenes/Character/Player/Player.tscn" id="2_4aqhy"]
 
 [node name="Node2D" type="Node2D"]
+
+[node name="BasicFloor" parent="." instance=ExtResource("1_ydtka")]
+position = Vector2(1, 2)
+
+[node name="Player" parent="." instance=ExtResource("2_4aqhy")]
+position = Vector2(-3, -149)
